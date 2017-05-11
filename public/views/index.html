@@ -7,23 +7,29 @@
   </head>
   <body>
     <div class = "row menubar">
-      <div class = "col-1 menubar__buttons">Text1</div>
+      <div class = "col-1 menubar__buttons"><a href = "/">R.Yuen</a></div>
       <div class = "col-1 menubar__buttons"><a href = "/login.html">LoginPage</a></div>
       <div class = "col-1 menubar__buttons"><a href = "/hulu.html">HULU</a></div>
-      <div class = "col-1 menubar__buttons"><a href = "/flexbox.html">Flexbox</a></div>
-      <div class = "col-1 menubar__buttons">Text5</div>
+      <div class = "col-1 menubar__buttons"><a href = "/flexbox.html">Flexbox</a></div>      
       <div class = "col-7 menubar__buttons"><a href = "/bootstrap.html">BS</a></div>
     </div>
     <div class = "row">
       <div class = "col-3">
-        <div class = "comment">
-          asdf
-          Ugly Mug Picutre goes here.          
-          Web Developer
+        <div class = "comment profilecard">
+          <div class = "comment__details">
+            Robert Yuen
+          </div>
+          <div class = "comment__main">
+            asdf
+            Picture Goes Here
+            Web Developer
+          </div>
+          <div class = "comment__actions">
+            <span>LI</span><span>GH</span><span>Tw</span><span>EM</span>
+          </div>          
         </div>
       </div>
       <div class = "col-6">
-
         <div class = "comment">
           <div class = "comment__details">
             Data Posted. Tech Used </br>
@@ -33,11 +39,32 @@
             Data Posted. Tech Used </br>
           </div>
           <div class = "comment__main">
-            Latest Prototype Picture</br>
-            Latest Prototype Description</br>
-            Latest Prototype Description</br>
-            Latest Prototype Description</br>
-            Latest Prototype Description</br>
+            After a bit, use CTRL-C to end the ping and you’ll find the ping failed. That is because the two containers are running on different networks. You can fix that. Then, use the exit command to close the container.
+
+Docker networking allows you to attach a container to as many networks as you like. You can also attach an already running container. Go ahead and attach your running web app to the my_bridge.
+          </div>
+          <div class = "comment__actions">
+            Like, Share, Views
+          </div>
+        </div>
+
+        <div class = "comment">
+          <div class = "comment__picture">Picture</div>
+          <div class = "comment__details">
+            <div class = "comment__details__text">
+              <div class = "comment__details__title">Title</div>
+              <div class = "comment__details__date">Date</div>
+            </div>
+          </div>
+          <div class = "comment__main">
+            A data volume is a specially-designated directory within one or more containers that bypasses the Union File System. Data volumes provide several useful features for persistent or shared data:
+
+Volumes are initialized when a container is created. If the container’s base image contains data at the specified mount point, that existing data is copied into the new volume upon volume initialization. (Note that this does not apply when mounting a host directory.)
+Data volumes can be shared and reused among containers.
+Changes to a data volume are made directly.
+Changes to a data volume will not be included when you update an image.
+Data volumes persist even if the container itself is deleted.
+Data volumes are designed to persist data, independent of the container’s lifecycle. Docker therefore never automatically deletes volumes when you remove a container, nor will it “garbage collect” volumes that are no longer referenced by a container.
           </div>
           <div class = "comment__actions">
             Like, Share, Views
@@ -49,8 +76,7 @@
             Data Posted. Tech Used
           </div>
           <div class = "comment__main">
-            Latest Prototype Picture</br>
-            Latest Prototype Description</br>
+            You can remove a container from a network by disconnecting the container. To do this, you supply both the network name and the container name. You can also use the container id. In this example, though, the name is faster.
           </div>
           <div class = "comment__actions">
             Like, Share, Views
@@ -62,8 +88,7 @@
             Data Posted. Tech Used
           </div>
           <div class = "comment__main">
-            Latest Prototype Picture</br>
-            Latest Prototype Description</br>
+            Docker Engine natively supports both bridge networks and overlay networks. A bridge network is limited to a single host running Docker Engine. An overlay network can include multiple hosts and is a more advanced topic. For this example, you’ll create a bridge network:
           </div>
           <div class = "comment__actions">
             Like, Share, Views
@@ -75,21 +100,9 @@
             Data Posted. Tech Used
           </div>
           <div class = "comment__main">
-            Latest Prototype Picture</br>
-            Latest Prototype Description</br>
-          </div>
-          <div class = "comment__actions">
-            Like, Share, Views
-          </div>
-        </div>
+            To build web applications that act in concert but do so securely, create a network. Networks, by definition, provide complete isolation for containers. You can add containers to a network when you first run a container.
 
-        <div class = "comment">
-          <div class = "comment__details">
-            Data Posted. Tech Used
-          </div>
-          <div class = "comment__main">
-            Latest Prototype Picture</br>
-            Latest Prototype Description</br>
+Launch a container running a PostgreSQL database and pass it the --net=my_bridge flag to connect it to your new network:
           </div>
           <div class = "comment__actions">
             Like, Share, Views
@@ -125,15 +138,20 @@
         
       </div>
       <div class = "col-3">
-        <div class = "comment">
-          Skills
-          NodeJS
-          Batman
-          Marvel
-          Docker
-          Superman
-          Git
-          Spiderman
+        <div class = "comment skillcard">
+          <div class = "comment__details">
+            Skills
+          </div>          
+          <div class = "comment__main">
+            NodeJS</br>
+            Python 3</br>
+            HTML</br>
+            Docker</br>
+            CSS</br>
+            Git</br>
+            React</br>
+            jQuery</br>
+          </div>          
         </div>
       </div>
     </div>
