@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      html{
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: red;
+      }
+      body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: gray;
+        display: flex;
+        align-content: stretch;
+      }
+      .grid{
+        display: flex;
+        background-color: orange;
+        background-image: url("./img/doboats.png");
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .grid__column{
+        width: 16.6%;
+      }
+      .grid__column *{
+        width: 100%;
+      }
+      .grid__column fieldset{
+        border: 0
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class = "grid">
+      <div class = "grid__column">
+        <button type = "submit" placeholder = "SSO">Signin with MEOW</button></br>
+        <hr> </hr>
+        <fieldset>
+          <input type = "text" placeholder = "Email Address"/>
+        </fieldset>
+        <fieldset>
+          <input type = "text" placeholder = "Password" />
+        </fieldset>
+        <input type = "submit" placeholder = "LET'S GO"/>
+        <span><a href = "/">forgot your password?</a></span>
+      </div>
+    </div>
+  </body>
+</html>

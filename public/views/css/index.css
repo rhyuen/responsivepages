@@ -1,0 +1,132 @@
+*{box-sizing: border-box;}
+a{text-decoration: none;}
+html{
+  font-family: "Segoe UI";
+  height: 100%;
+  margin: 0;
+}
+body{
+  margin: 0;
+}
+
+[class*="col-"]{
+  float: left;
+  padding: 0.1px;  
+  width: 100%;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menubar{
+  background-color: lavender;
+  padding: 1%;
+  display: flex;  
+}
+.menubar__buttons{
+  flex-grow: 2;  
+}
+
+.comment{
+  background-color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.comment__details{    
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.comment__main{   
+  padding-top: 2%;
+  padding-bottom: 2%;  
+}
+
+.comment__actions{  
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: 0.5px solid rgba(0,0,0,0.3);  
+}
+
+.footerpage{
+  background-color: green;
+  display: none;
+  position: fixed;
+  bottom: 0%;
+  width: 25%
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+  body{
+    background-color: green;
+  }
+  
+}
+
+@media only screen and (min-width: 600px){
+  .col-m-1{width: 8.33%;}
+  .col-m-2{width: 16.66%;}
+  .col-m-3{width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  .footerpage {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .col-1{width: 8.33%;}
+  .col-2{width: 16.66%;}
+  .col-3{
+    width: 25%;
+    color:blue;    
+  }
+  .col-4 {
+    width: 33.33%;    
+  }
+  .col-5 {width: 41.66%;}
+  .col-6 {
+    width: 50%;
+    background-color: red;
+  }
+  .col-7 {width: 58.33%;}
+  .col-8 {
+    /*The footer text*/
+    width: 66.66%;
+    background-color: pink;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@media only screen and (orientation: portrait){
+  body {
+    background-color: gray;
+  }  
+}

@@ -1,0 +1,19 @@
+{
+  "name": "rwd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Robert Yuen <dungeonry@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp default",
+    "watch": "gulp watch",
+    "lint": "gulp lint"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "imagemin": "^5.2.2"
+  }
+}
