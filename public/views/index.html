@@ -20,9 +20,13 @@
             Robert Yuen
           </div>
           <div class = "comment__main">
-            asdf
-            Picture Goes Here
-            Web Developer
+            <div class = "comment__main__picture">
+            </div>
+            <div class = " comment__main__text">
+              asdf<br/>
+              Picture Goes Here<br/>
+              Web Developer<br/>
+            </div>            
           </div>
           <div class = "comment__actions">
             <span>LI</span><span>GH</span><span>Tw</span><span>EM</span>
@@ -48,16 +52,17 @@ Docker networking allows you to attach a container to as many networks as you li
           </div>
         </div>
 
-        <div class = "comment">
-          <div class = "comment__picture">Picture</div>
+        <div class = "comment">          
           <div class = "comment__details">
+            <div class = "comment__details__picture">RYUen</div>
             <div class = "comment__details__text">
-              <div class = "comment__details__title">Title</div>
-              <div class = "comment__details__date">Date</div>
+              <div class = "comment__details__text__title">Some Project</div>
+              <div class = "comment__details__text__date">5 hrs ago.</div>
             </div>
           </div>
-          <div class = "comment__main">
-            A data volume is a specially-designated directory within one or more containers that bypasses the Union File System. Data volumes provide several useful features for persistent or shared data:
+          <div class = "comment__main">            
+            <div class = "comment__main__text">
+              A data volume is a specially-designated directory within one or more containers that bypasses the Union File System. Data volumes provide several useful features for persistent or shared data:
 
 Volumes are initialized when a container is created. If the container’s base image contains data at the specified mount point, that existing data is copied into the new volume upon volume initialization. (Note that this does not apply when mounting a host directory.)
 Data volumes can be shared and reused among containers.
@@ -65,6 +70,9 @@ Changes to a data volume are made directly.
 Changes to a data volume will not be included when you update an image.
 Data volumes persist even if the container itself is deleted.
 Data volumes are designed to persist data, independent of the container’s lifecycle. Docker therefore never automatically deletes volumes when you remove a container, nor will it “garbage collect” volumes that are no longer referenced by a container.
+            </div>
+            <div class = "comment__main__picture">              
+            </div>
           </div>
           <div class = "comment__actions">
             Like, Share, Views
@@ -73,7 +81,11 @@ Data volumes are designed to persist data, independent of the container’s life
 
         <div class = "comment">
           <div class = "comment__details">
-            Data Posted. Tech Used
+            <div class = "comment__details__picture">RYUen</div>
+            <div class = "comment__details__text">
+              <div class = "comment__details__text__title">Some Project</div>
+              <div class = "comment__details__text__date">5 hrs ago.</div>
+            </div>
           </div>
           <div class = "comment__main">
             You can remove a container from a network by disconnecting the container. To do this, you supply both the network name and the container name. You can also use the container id. In this example, though, the name is faster.
@@ -97,7 +109,11 @@ Data volumes are designed to persist data, independent of the container’s life
 
         <div class = "comment">
           <div class = "comment__details">
-            Data Posted. Tech Used
+            <div class = "comment__details__picture">RYUen</div>
+            <div class = "comment__details__text">
+              <div class = "comment__details__text__title">Some Project</div>
+              <div class = "comment__details__text__date">5 hrs ago.</div>
+            </div>
           </div>
           <div class = "comment__main">
             To build web applications that act in concert but do so securely, create a network. Networks, by definition, provide complete isolation for containers. You can add containers to a network when you first run a container.
@@ -156,12 +172,8 @@ Launch a container running a PostgreSQL database and pass it the --net=my_bridge
       </div>
     </div>
     <div class = "row footerpage">
-      <div class = "col-2">
-      </div>
-      <div class = "col-8">
-        Footer Text is Here.
-      </div>
-      <div class = "col-2">
+     <div class = "comment">
+       Contact
       </div>
     </div>
     <script src = "./javascript/index.js" rel = "text/javascript"></script>

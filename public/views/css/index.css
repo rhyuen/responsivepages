@@ -44,7 +44,7 @@ body{
   margin-right: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  box-shadow: 1px 1px 5px #AAA;
+  box-shadow: 1px 1px 5px #AAA;  
 }
 
 .comment__details{    
@@ -52,14 +52,47 @@ body{
   padding-bottom: 2%;
   font-family: 'Segoe UI';
   color: #90949c;
-  font-size: 12px;
+  font-size: 12px;  
+  display: flex;
 }
+
+.comment__details__picture{
+  background-color: lavender;  
+  flex-shrink: 1;
+  margin-right: 2%;  
+  max-width: 50%; 
+}
+
+
+.comment__details__text{  
+  flex-shrink: 2;
+}
+.comment__details__text__title{
+  color: indigo;
+  font-weight: bold;
+}
+.comment__details__text__date{  
+}
+
+
 
 .comment__main{   
   padding-top: 2%;
   padding-bottom: 2%;  
   font-size: 13px;
   font-family: "Arial";
+  
+}
+.comment__main__picture{
+  background-color: indigo;
+  width: 100%;
+  color: white;
+  padding: 50% 0%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.comment__main__text{
+  
 }
 
 .comment__actions{  
@@ -78,8 +111,7 @@ body{
   display: none;
 }
 
-.footerpage{
-  background-color: green;
+.footerpage{  
   display: none;
   position: fixed;
   bottom: 0%;
