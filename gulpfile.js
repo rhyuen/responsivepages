@@ -37,4 +37,4 @@ gulp.task("watch", ["lint", "browserSync"], () => {
   gulp.watch("./public/**/*.html").on("change", browserSync.reload);
 });
 
-gulp.task("default", ["watch"]);
+gulp.task("default", ["browserSync", "watch"]);

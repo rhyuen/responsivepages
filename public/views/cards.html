@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        html{            
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            font-family: "Helvetica";
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .primary_pane{            
+            height: 100%;
+            width: 60%;
+            background-color: slategrey;            
+        }
+        @media only screen and (max-width: 500px){
+            .primary_pane{
+                background-color: green;   
+            }
+        }
+        @media only screen and (min-width: 600px){
+            .primary_pane{
+                background-color: coral;
+                width: 40%;
+            }
+        }
+        @media only screen and (min-width: 768px){
+            .primary_pane{
+
+            }
+        }
+
+        .full_width_card{
+            width: 100%;
+            background-color: aqua;
+        }
+        .card{
+            display: flex;
+            width: 150px;
+            border: 1px solid #EF9A9A;
+            border-radius: 4px;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .card__header{
+            color: #D32F2F;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            border-bottom: 1px solide #EF9A9A;
+            background-color: #FFEBEE;
+            padding: 5px 10px;
+        }
+        .card__content{
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0px;            
+        }
+        .material-icons{
+            font-size: 36px;
+            color: #D32F2F;
+            margin-bottom: 5px;
+        }
+        .card__content__description{
+            color: #D32F2F;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .row{
+            width: 100%;
+            height: 20%;
+            background-color: green;
+            border-top: 4px solid white;                    
+        }
+        .row__tile{
+            vertical-align: top;
+            width: 32.5%;
+            height: 100%;
+            background-color: cornflowerblue;
+            box-sizing: border-box;            
+            padding: 2%;            
+            display: inline-block;    
+        }
+        .row__tile--two{
+            width: 66.66%;            
+        }
+        .row__tile--half{
+            width: 49.5%;                        
+        }
+        .row__tile--full{
+            width: 100%;
+        }
+        
+    </style>
+  </head>
+  <body>      
+      <div class = "primary_pane">
+        <div class = "card">
+            <div class = "card__header">
+                Some Text
+            </div>
+            <div class = "card__content">
+                <i class = "material-icons">whatshot</i>
+                <div class = "card__content__description">
+                    Description
+                </div>
+            </div>
+        </div>                
+        <div class = "row">
+            <div class = "row__tile">
+                Obligatroy filler text.
+            </div>
+            <div class = "row__tile">
+                Obligatroy filler text.
+            </div>
+            <div class = "row__tile">
+                Obligatroy filler text.
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "row__tile row__tile--two">
+                OMG Here's some news that does stuff.  Marvel Legacy comes out at some point this year I think.  I wonder if thor will ever get his hammer back.
+            </div>
+            <div class = "row__tile">
+                asdf
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "row__tile row__tile--half">
+                OMG Here's some news that does stuff.  Marvel Legacy comes out at some point this year I think.  I wonder if thor will ever get his hammer back.
+            </div>           
+            <div class = "row__tile row__tile--half">
+                OMG Here's some news that does stuff.  Marvel Legacy comes out at some point this year I think.  I wonder if thor will ever get his hammer back.
+            </div>           
+        </div>
+         <div class = "row">
+             <div class = "row__tile row__tile--full">
+                OMG Here's some news that does stuff.  Marvel Legacy comes out at some point this year I think.  I wonder if thor will ever get his hammer back.
+            </div>           
+        </div>
+    </div>      
+  </body>
+</html>

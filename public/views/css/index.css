@@ -6,13 +6,17 @@ a{
   font-family: "Helvetica";
   font-weight: bold;
 }
+a:hover{
+  color: pink;  
+}
 html{
   font-family: "Segoe UI";
   height: 100%;
   margin: 0;
 }
-body{
-  margin: 0;
+body{  
+  width: 100%;
+  margin: 0 auto;
 }
 
 [class*="col-"]{
@@ -28,31 +32,44 @@ body{
 }
 
 .menubar{
+  width: 100%;
   background-color: indigo;
-  padding: 1%;
-  display: flex;
-  margin-bottom: 1%;  
-}
-.menubar__buttons{
-  flex-grow: 2;  
+  margin-bottom: 5px;  
+  padding: 10px 0px;
+  box-sizing: border-box;  
 }
 
-.comment{
-  background-color: white;  
-  margin-bottom: 2%;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+.menubar__container{
+  max-width: 850px;
+  margin: 0 auto;  
+  display: flex;
+  vertical-align: top;
+}
+
+.menubar__buttons{
+  padding-right: 10px;
+}
+
+.content{
+  max-width: 850px;
+  margin: 0 auto;
+  width: 100%;  
+}
+
+
+.comment{  
+  background-color: white;    
+  padding: 0px 20px;    
+  margin: 10px 10px 0px 0px;    
   box-shadow: 1px 1px 5px #AAA;  
 }
 
 .comment__details{    
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 10px;
   font-family: 'Segoe UI';
   color: #90949c;
-  font-size: 12px;  
+  font-weight: bold;
+  font-size: 13px;  
   display: flex;
 }
 
@@ -77,17 +94,16 @@ body{
 
 
 .comment__main{   
-  padding-top: 2%;
-  padding-bottom: 2%;  
+  padding: 10px 0px;  
   font-size: 13px;
-  font-family: "Arial";
+  font-family: "Arial";  
   
 }
 .comment__main__picture{
   background-color: indigo;
   width: 100%;
   color: white;
-  padding: 50% 0%;
+  padding: 50% 0;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -96,31 +112,33 @@ body{
 }
 
 .comment__actions{  
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border-top: 0.5px solid rgba(0,0,0,0.3);
-  font-family: 'Segoe UI';
+  padding: 10px 0px;    
+  border-top: 1px solid #e5e5e5;  
+}
+
+.comment__actions__button{  
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
+  color: #343434;
+  padding-right: 10px;
+}
+.comment__actions__button:hover{
+  color: pink;
+  text-decoration: underline;
 }
 
 .skillcard{
   display: none;
+  padding-bottom: 10px;
 }
 .profilecard{
   display: none;
 }
 
 .footerpage{  
-  display: none;
-  position: fixed;
-  bottom: 0%;
-  width: 25%
+  display: none;  
+  bottom: 0;    
 }
-
-
-
-
 
 
 
@@ -156,15 +174,14 @@ body{
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 850px){
   body{
-    background-color: purple;
+    background-color: pink;
   }
   .col-1{width: 8.33%;}
   .col-2{width: 16.66%;}
   .col-3{
-    width: 25%;
-    /*background-color:blue;    */
+    width: 25%;        
   }
   .col-4 {
     width: 33.33%;    

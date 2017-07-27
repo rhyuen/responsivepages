@@ -1,0 +1,14 @@
+{
+    "name": "ryuen",
+    "alias": [
+        "ryuen"
+    ],
+    "env": {
+        
+    },
+    "engine": {
+        "node":"^8.1.4"
+    },
+    "public": true,
+    "type": "npm"
+}
