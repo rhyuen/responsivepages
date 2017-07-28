@@ -112,13 +112,19 @@ body{
   
 }
 .comment__main__picture{
-  background-color: indigo;
+  background: indigo;      
   width: 100%;
   color: white;
   padding: 50% 0;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+.col-6 .comment__main__picture{
+  background: url("../img/yarrscreenshot.png") no-repeat center;  
+  background-size: cover;
+}
+
 .comment__main__text{
   
 }
