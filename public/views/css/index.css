@@ -1,14 +1,5 @@
 *{box-sizing: border-box;}
-a{
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  font-family: "Helvetica";
-  font-weight: bold;
-}
-a:hover{
-  color: pink;  
-}
+
 html{
   font-family: "Segoe UI";
   height: 100%;
@@ -39,15 +30,37 @@ body{
   box-sizing: border-box;  
 }
 
+.menubar a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Helvetica";
+  font-weight: bold;
+}
+.menubar a:hover{
+  color: pink;  
+}
+
 .menubar__container{
   max-width: 850px;
   margin: 0 auto;  
   display: flex;
   vertical-align: top;
 }
+.menubar__container__section{
+  
+}
+.menubar__container__section--left{
+  flex-grow: 100;
+}
+.menubar__container__section--right{  
+  /*background: blue;*/
+  flex-grow:1;  
+}
 
-.menubar__buttons{
+.menubar__container__section__buttons{
   padding-right: 10px;
+  display: inline-block;
 }
 
 .content{
@@ -79,7 +92,6 @@ body{
   margin-right: 2%;  
   max-width: 50%; 
 }
-
 
 .comment__details__text{  
   flex-shrink: 2;
@@ -122,7 +134,14 @@ body{
   color: #343434;
   padding-right: 10px;
 }
-.comment__actions__button:hover{
+.comment__actions a{
+  font-size: 13px;
+  font-weight: 600;
+  color: #343434;
+  text-decoration: none;
+}
+
+.comment__actions a:hover, .comment__actions__button:hover{
   color: pink;
   text-decoration: underline;
 }
