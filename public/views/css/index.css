@@ -125,8 +125,21 @@ body{
   background-size: cover;
 }
 
-.comment__main__text{
+.comment__main__text{  
+}
+
+.comment__tags{
+  margin: 10px 0px;
   
+}
+.comment__tags__item{
+  font-size: 13px;
+  font-weight: 600;
+  color: #898f9c;
+  background: lavender;
+  border: 0.5px solid #898f9c;
+  border-radius: 2px;
+  padding: 0px 2px;
 }
 
 .comment__actions{  

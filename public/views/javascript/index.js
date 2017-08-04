@@ -13,3 +13,7 @@ if("serviceWorker" in navigator){
 }else{
     console.log("Service Worker is not supported.");
 }
+
+
+//fetch()
+//TODO: GET GIT HUB VALUES - User
