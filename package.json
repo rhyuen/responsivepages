@@ -6,16 +6,17 @@
   "license": "MIT",
   "scripts": {
     "start": "serve public/views",
+    "deploy": "now public/views/ --public",
     "dev": "gulp"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
-    "del": "^2.2.2",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^3.0.1",
-    "imagemin": "^5.2.2"
+    "gulp-eslint": "^5.0.0",
+    "imagemin": "^6.0.0"
   },
   "dependencies": {
-    "serve": "^6.0.3"
+    "serve": "^10.0.0"
   }
 }
