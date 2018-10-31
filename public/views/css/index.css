@@ -1,118 +1,125 @@
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
-html{
+html {
   font-family: "Segoe UI";
   height: 100%;
   margin: 0;
 }
-body{  
+
+body {
   width: 100%;
   margin: 0 auto;
 }
 
-[class*="col-"]{
+[class*="col-"] {
   float: left;
-  padding: 0.1px;  
+  padding: 0.1px;
   width: 100%;
 }
 
-.row::after{
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.menubar{
+.menubar {
   width: 100%;
   background-color: indigo;
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
   padding: 10px 0px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
-.menubar a{
+.menubar a {
   text-decoration: none;
   color: white;
   font-size: 14px;
   font-family: "Helvetica";
   font-weight: bold;
 }
-.menubar a:hover{
-  color: pink;  
+
+.menubar a:hover {
+  color: pink;
 }
 
-.menubar__container{
+.menubar__container {
   max-width: 850px;
-  margin: 0 auto;  
+  margin: 0 auto;
   display: flex;
   vertical-align: top;
 }
-.menubar__container__section{
-  
-}
-.menubar__container__section--left{
+
+.menubar__container__section {}
+
+.menubar__container__section--left {
   flex-grow: 100;
 }
-.menubar__container__section--right{  
+
+.menubar__container__section--right {
   /*background: blue;*/
-  flex-grow:1;  
+  flex-grow: 1;
 }
 
-.menubar__container__section__buttons{
+.menubar__container__section__buttons {
   padding-right: 10px;
   display: inline-block;
 }
 
-.content{
+.content {
   max-width: 850px;
   margin: 0 auto;
-  width: 100%;  
+  width: 100%;
 }
 
 
-.comment{  
-  background-color: white;    
-  padding: 0px 20px;    
-  margin: 10px 10px 0px 0px;    
-  box-shadow: 1px 1px 5px #AAA;  
+.comment {
+  background-color: white;
+  padding: 0px 20px;
+  margin: 10px 10px 0px 0px;
+  box-shadow: 1px 1px 5px #AAA;
 }
 
-.comment__details{    
+.comment__details {
   padding-top: 10px;
   font-family: 'Segoe UI';
   color: #90949c;
   font-weight: bold;
-  font-size: 13px;  
+  font-size: 13px;
   display: flex;
 }
 
-.comment__details__picture{
-  background-color: lavender;  
+.comment__details__picture {
+  background-color: lavender;
   flex-shrink: 1;
-  margin-right: 2%;  
-  max-width: 50%; 
+  margin-right: 2%;
+  max-width: 50%;
 }
 
-.comment__details__text{  
+.comment__details__text {
   flex-shrink: 2;
 }
-.comment__details__text__title{
+
+.comment__details__text__title {
   color: indigo;
   font-weight: bold;
 }
-.comment__details__text__date{  
-}
+
+.comment__details__text__date {}
 
 
 
-.comment__main{   
-  padding: 10px 0px;  
+.comment__main {
+  padding: 10px 0px;
   font-size: 13px;
-  font-family: "Arial";  
-  
+  font-family: "Arial";
+
 }
-.comment__main__picture{
-  background: indigo;      
+
+.comment__main__picture {
+  background: indigo;
   width: 100%;
   color: white;
   padding: 50% 0;
@@ -120,19 +127,19 @@ body{
   margin-bottom: 5%;
 }
 
-.col-6 .comment__main__picture{
-  background: url("../img/yarrscreenshot.png") no-repeat center;  
+.col-6 .comment__main__picture {
+  background: url("../img/yarrscreenshot.png") no-repeat center;
   background-size: cover;
 }
 
-.comment__main__text{  
+.comment__main__text {}
+
+.comment__tags {
+  margin: 10px 0px;
+
 }
 
-.comment__tags{
-  margin: 10px 0px;
-  
-}
-.comment__tags__item{
+.comment__tags__item {
   font-size: 13px;
   font-weight: 600;
   color: #898f9c;
@@ -142,94 +149,150 @@ body{
   padding: 0px 2px;
 }
 
-.comment__actions{  
-  padding: 10px 0px;    
-  border-top: 1px solid #e5e5e5;  
+.comment__actions {
+  padding: 10px 0px;
+  border-top: 1px solid #e5e5e5;
 }
 
-.comment__actions__button{  
+.comment__actions__button {
   font-size: 13px;
   font-weight: 600;
   color: #343434;
   padding-right: 10px;
 }
-.comment__actions a{
+
+.comment__actions a {
   font-size: 13px;
   font-weight: 600;
   color: #343434;
   text-decoration: none;
 }
 
-.comment__actions a:hover, .comment__actions__button:hover{
+.comment__actions a:hover,
+.comment__actions__button:hover {
   color: pink;
   text-decoration: underline;
 }
 
-.skillcard{
+.skillcard {
   display: none;
   padding-bottom: 10px;
 }
-.profilecard{
+
+.profilecard {
   display: none;
 }
 
-.footerpage{  
-  display: none;  
-  bottom: 0;    
+.footerpage {
+  display: none;
+  bottom: 0;
 }
 
 
 
-@media only screen and (max-width: 500px){
-  body{
+@media only screen and (max-width: 500px) {
+  body {
     background-color: green;
   }
-  
+
 }
 
-@media only screen and (min-width: 600px){
-  .col-m-1{width: 8.33%;}
-  .col-m-2{width: 16.66%;}
-  .col-m-3{width: 25%;}
-  .col-m-4 {width: 33.33%;}
-  .col-m-5 {width: 41.66%;}
-  .col-m-6 {width: 50%;}
-  .col-m-7 {width: 58.33%;}
-  .col-m-8 {width: 66.66%;}
-  .col-m-9 {width: 75%;}
-  .col-m-10 {width: 83.33%;}
-  .col-m-11 {width: 91.66%;}
-  .col-m-12 {width: 100%;}
+@media only screen and (min-width: 600px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  .col-m-6 {
+    width: 50%;
+  }
+
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  .col-m-9 {
+    width: 75%;
+  }
+
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  .col-m-12 {
+    width: 100%;
+  }
 
   .footerpage {
     display: block;
   }
-  .profilecard{
+
+  .profilecard {
     display: block;
   }
-  .skillcard{
+
+  .skillcard {
     display: block;
   }
 }
 
-@media only screen and (min-width: 850px){
-  body{
-    background-color: pink;
+@media only screen and (min-width: 850px) {
+  body {
+    background-color: #f9f9f9;
   }
-  .col-1{width: 8.33%;}
-  .col-2{width: 16.66%;}
-  .col-3{
-    width: 25%;        
+
+  .col-1 {
+    width: 8.33%;
   }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
   .col-4 {
-    width: 33.33%;    
+    width: 33.33%;
   }
-  .col-5 {width: 41.66%;}
+
+  .col-5 {
+    width: 41.66%;
+  }
+
   .col-6 {
     width: 50%;
     /*background-color: red;*/
   }
-  .col-7 {width: 58.33%;}
+
+  .col-7 {
+    width: 58.33%;
+  }
+
   .col-8 {
     /*The footer text*/
     width: 66.66%;
@@ -237,14 +300,26 @@ body{
     padding-top: 2%;
     padding-bottom: 2%;
   }
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
 }
 
-@media only screen and (orientation: portrait){
+@media only screen and (orientation: portrait) {
   body {
     background-color: lavender;
-  }  
+  }
 }
