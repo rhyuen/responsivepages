@@ -10,9 +10,9 @@
     "dev": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "2.26.3",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "4.0.0",
     "gulp-eslint": "^5.0.0",
     "imagemin": "^6.0.0"
   },
